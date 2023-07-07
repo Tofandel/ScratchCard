@@ -24,14 +24,14 @@ See the SCRATCH_TYPES in action: [Line](/brushes/line), [Spray](/brushes/spray),
 | **scratchType** | SCRATCH_TYPE | LINE | Possibles values : LINE, SPRAY, CIRCLE, BRUSH |
 | **containerWidth** | number | 100 |  |
 | **containerHeight** | number | 100 |  |
-| **brushSrc** | string | "" | For SCRATCH_TYPE.BRUSH |
+| **brushSrc** | string | "" | For type.BRUSH |
 | **imageForwardSrc** | string | "" |  |
 | **imageBackgroundSrc** | string | "" |  |
 | **htmlBackground** | string | "" | <br> ``` `<p>Html-content<p>` ``` |
 | **callback** | function | function() { alert('done.'); } |  |
-| **clearZoneRadius** | number | 0 | For SCRATCH_TYPE.CIRCLE and SCRATCH_TYPE.LINE |
-| **nPoints** | number | 30 | For SCRATCH_TYPE.SPRAY |
-| **pointSize** | number | 4 | For SCRATCH_TYPE.SPRAY |
+| **clearZoneRadius** | number | 0 | For type.CIRCLE and type.LINE |
+| **nPoints** | number | 30 | For type.SPRAY |
+| **pointSize** | number | 4 | For type.SPRAY |
 
 ## Initialization method
 ```js

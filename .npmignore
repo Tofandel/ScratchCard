@@ -13,6 +13,7 @@ config.gypi
 CVS
 npm-debug.log
 .travis.yml
-dist/
+demo/
 docs/
 deploy.sh
+webpack.config.js

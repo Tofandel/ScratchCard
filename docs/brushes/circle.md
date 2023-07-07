@@ -72,7 +72,7 @@
 const scContainer = document.getElementById('js--sc--container')
 const scInfos = document.querySelector('.sc__infos');
 const sc = new ScratchCard('#js--sc--container', {
-  scratchType: SCRATCH_TYPE.CIRCLE,
+  scratchType: ScratchCard.type.CIRCLE,
   containerWidth: scContainer.offsetWidth,
   containerHeight: 300,
   imageForwardSrc: '/images/scratchcard.jpg',

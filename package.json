@@ -1,14 +1,14 @@
 {
   "name": "@tofandel/scratchcard-js",
-  "version": "1.5.4",
+  "version": "1.6.0",
   "description": "Create scratch card in browser.",
-  "main": "./build/scratchcard.min.js",
+  "main": "./dist/scratchcard.min.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development concurrently \"webpack\" \"webpack-dev-server\" ",
+    "dev": "webpack serve --open",
     "build": "webpack",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "prepublishOnly": "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -32,9 +32,6 @@
     "@babel/preset-env": "^7.22.7",
     "@vuepress/plugin-active-header-links": "^1.9.9",
     "babel-loader": "^9.1.2",
-    "clean-webpack-plugin": "^4.0.0",
-    "concurrently": "^8.2.0",
-    "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "postcss-loader": "^7.3.3",
     "sass": "^1.63.6",
@@ -42,7 +39,7 @@
     "style-loader": "^3.3.3",
     "ts-loader": "^9.4.4",
     "typescript": "^5.1.6",
-    "vuepress": "^1.9.9",
+    "vuepress": " ^1.9.9",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"

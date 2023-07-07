@@ -1,21 +1,16 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const devMode = process.env.NODE_ENV === 'development';
+const devMode = process.env.NODE_ENV === 'development' || process.env.WEBPACK_SERVE === 'true';
 
 let config = {
   name: 'Assets',
   context: path.resolve('./src'),
   mode: devMode ? 'development' : 'production',
-  watch: devMode,
   devServer: {
-    overlay: true,
-    stats: 'errors-only',
-    // CORS
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
-    }
+    compress: true,
+    hot: true,
+    static: {
+      directory: path.join(__dirname, 'demo'),
+    },
   },
   performance: {
     hints: devMode ? false : 'warning',
@@ -24,11 +19,15 @@ let config = {
     scratchcard: './ScratchCard.ts'
   },
   output: {
+    publicPath: "/",
     filename: devMode ? '[name].js' : '[name].min.js',
     chunkFilename: '[name].bundle.js',
-    path: __dirname + '/build',
-    library: undefined,
-    libraryTarget: 'umd'
+    path: path.join(__dirname, 'dist'),
+    library: {
+      export: 'ScratchCard',
+      name: 'ScratchCard',
+      type: 'umd',
+    },
   },
   resolve: {
     extensions: [ ".tsx", ".ts", ".js" ]
@@ -42,7 +41,6 @@ let config = {
       }
     ]
   },
-  plugins: []
 };
 
 module.exports = config;

@@ -16,6 +16,7 @@ class ScratchCard {
     public brushImage: any;
     public zone: { top: number, left: number };
     public percent: number;
+    public static type = SCRATCH_TYPE;
 
     constructor(selector: string | HTMLElement, config: SC_CONFIG) {
         const defaults = {
@@ -148,7 +149,7 @@ class ScratchCard {
         this.canvas.style.pointerEvents = 'none';
         if (this.config.callback !== undefined) {
             this.callbackDone = true;
-            this.config.callback();
+            this.config.callback.call(this);
         }
     }
 
@@ -274,4 +275,4 @@ class ScratchCard {
 
 }
 
-export {ScratchCard, SCRATCH_TYPE};
+export {ScratchCard};
