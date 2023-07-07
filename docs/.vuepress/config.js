@@ -24,7 +24,7 @@ module.exports = {
           { text: 'Html background', link: '/brushes/html-bg/' },
         ]
       },
-      { text: 'github', link: 'https://github.com/Masth0/ScratchCard' },
+      { text: 'github', link: 'https://github.com/Tofandel/ScratchCard' },
       { text: 'npm', link: 'https://www.npmjs.com/package/scratchcard-js' },
     ],
   }

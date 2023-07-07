@@ -1,6 +1,6 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const devMode = process.env.NODE_ENV == 'development';
+const devMode = process.env.NODE_ENV === 'development';
 
 let config = {
   name: 'Assets',

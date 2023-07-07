@@ -7,7 +7,7 @@ You can install ScratchCard with npm:
 ```
 npm install --save scratchcard-js
 ```
-or just copy the file [scratchard.min.js](https://raw.githubusercontent.com/Masth0/ScratchCard/master/build/scratchcard.min.js)
+or just copy the file [scratchard.min.js](https://raw.githubusercontent.com/Tofandel/ScratchCard/master/build/scratchcard.min.js)
 
 ## Import ScratchCard
 

@@ -1,15 +1,15 @@
 # Scratchcard-js 
-![Build](https://travis-ci.org/Masth0/ScratchCard.svg?branch=v2)
-![version](https://img.shields.io/npm/v/scratchcard-js.svg)
+![Build](https://travis-ci.org/Tofandel/ScratchCard.svg?branch=master)
+![version](https://img.shields.io/npm/v/@tofandel/scratchcard-js.svg)
 
 ScratchCard is a js lib to simulate a scratchcard in browser with html5 and canvas.
 
-You can see the [**demo page**](https://masth0.github.io/ScratchCard/).
+You can see the [**demo page**](https://tofandel.github.io/ScratchCard/).
 
 ## Install
 You can install ScratchCard with npm:
 ```
-npm install --save scratchcard-js
+npm install --save @tofandel/scratchcard-js
 ```
 or just clone this repo:
 ```
@@ -20,14 +20,11 @@ and pick in the folder **./build** the file **scratchard.min.js**
 ## Getting started
 
 ```js
-import {ScratchCard, SCRATCH_TYPE} from 'scratchcard-js'
+import {ScratchCard, SCRATCH_TYPE} from '@tofandel/scratchcard-js'
 
 const scContainer = document.getElementById('js--sc--container')
-
-// You also can pass HTML Element or a string for querySelector
-// new ScratchCard(htmlElement...
-
-const sc = new ScratchCard('#js--sc--container', {
+// You also can pass a querySelector string
+const sc = new ScratchCard(scContainer, {
   scratchType: SCRATCH_TYPE.SPRAY,
   containerWidth: scContainer.offsetWidth,
   containerHeight: 300,

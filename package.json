@@ -1,17 +1,18 @@
 {
-  "name": "scratchcard-js",
-  "version": "1.4.10",
+  "name": "@tofandel/scratchcard-js",
+  "version": "1.5.3",
   "description": "Create scratch card in browser.",
   "main": "./build/scratchcard.min.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development concurrently \"webpack\" \"webpack-dev-server\" ",
     "build": "webpack",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Masth0/ScratchCard"
+    "url": "https://github.com/Tofandel/ScratchCard"
   },
   "keywords": [
     "canvas",
@@ -20,38 +21,40 @@
     "scratch card"
   ],
   "author": "Masth0 <dev.mastho@gmail.com>",
+  "contributors": [
+    "Tofandel <tofandel@tukan.hu>"
+  ],
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@vuepress/plugin-active-header-links": "^1.2.0",
-    "babel-loader": "^8.0.4",
-    "clean-webpack-plugin": "^0.1.19",
-    "concurrently": "^4.0.1",
-    "cross-env": "^5.2.0",
-    "css-loader": "^3.2.0",
-    "node-sass": "^4.13.0",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.0",
-    "ts-loader": "^5.2.1",
-    "typescript": "^3.1.1",
-    "vuepress": "^1.2.0",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.4"
+    "@babel/cli": "^7.22.6",
+    "@babel/core": "^7.22.8",
+    "@babel/plugin-transform-runtime": "^7.22.7",
+    "@babel/preset-env": "^7.22.7",
+    "@vuepress/plugin-active-header-links": "^1.9.9",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "postcss-loader": "^7.3.3",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "vuepress": "^1.9.9",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "browsers": [
     "last 2 versions",
-    "ie > 9"
+    "ie > 10"
   ],
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
-    "@babel/runtime": "^7.1.2"
+    "@babel/runtime": "^7.22.6"
   }
 }
