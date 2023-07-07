@@ -18,7 +18,7 @@ npm install --save @tofandel/scratchcard-js
 ## Getting started
 
 ```js
-import {ScratchCard} from '@tofandel/scratchcard-js'
+import ScratchCard from '@tofandel/scratchcard-js'
 
 const scContainer = document.getElementById('js--sc--container')
 // You also can pass a querySelector string

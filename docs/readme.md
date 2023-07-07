@@ -12,13 +12,11 @@ or just copy the file [scratchard.min.js](https://raw.githubusercontent.com/Tofa
 ## Import ScratchCard
 
 ```js
-import { ScratchCard, SCRATCH_TYPE } from 'scratchcard-js';
-// or
-import 'scratchcard-js'; 
+import ScratchCard from '@tofandel/scratchcard-js';
 ```
 
 ## Configuration
-See the SCRATCH_TYPES in action: [Line](/brushes/line), [Spray](/brushes/spray), [Circle](/brushes/circle), [Brush](/brushes/brush)
+See the types in action: [Line](/brushes/line), [Spray](/brushes/spray), [Circle](/brushes/circle), [Brush](/brushes/brush)
 | Name  | Type | Default value | Comment |
 |---|---|---|---|
 | **scratchType** | SCRATCH_TYPE | LINE | Possibles values : LINE, SPRAY, CIRCLE, BRUSH |

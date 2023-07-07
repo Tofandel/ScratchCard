@@ -275,4 +275,4 @@ class ScratchCard {
 
 }
 
-export {ScratchCard};
+export default ScratchCard;
