@@ -5,9 +5,8 @@ ScratchCard is a js lib to simulate a scratchcard in browser with html5 and canv
 ## Install
 You can install ScratchCard with npm:
 ```
-npm install --save scratchcard-js
+npm install --save @tofandel/scratchcard-js
 ```
-or just copy the file [scratchard.min.js](https://raw.githubusercontent.com/Tofandel/ScratchCard/master/build/scratchcard.min.js)
 
 ## Import ScratchCard
 

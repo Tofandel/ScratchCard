@@ -24,6 +24,7 @@ let config = {
     chunkFilename: '[name].bundle.js',
     path: path.join(__dirname, 'dist'),
     library: {
+      export: 'default',
       name: 'ScratchCard',
       type: 'umd',
     },

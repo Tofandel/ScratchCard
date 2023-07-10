@@ -1,4 +1,4 @@
-**# Scratchcard-js
+# Scratchcard-js
 
 ![Build](https://travis-ci.org/Tofandel/ScratchCard.svg?branch=master)
 ![version](https://img.shields.io/npm/v/@tofandel/scratchcard-js.svg)

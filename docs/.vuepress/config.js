@@ -1,10 +1,10 @@
-module.exports = {
-  theme: '',
+import { defaultTheme } from '@vuepress/theme-default'
+
+export default {
+  theme: defaultTheme({
+  }),
   title: ' ScratchCard-js',
   plugins: ['@vuepress/active-header-links'],
-  head: [
-    { text: 'Home', link: '/' },
-  ],
   port: 8088,
   base: '/ScratchCard/',
   configureWebpack: {},
@@ -25,7 +25,7 @@ module.exports = {
         ]
       },
       { text: 'github', link: 'https://github.com/Tofandel/ScratchCard' },
-      { text: 'npm', link: 'https://www.npmjs.com/package/scratchcard-js' },
+      { text: 'npm', link: 'https://www.npmjs.com/package/@tofandel/scratchcard-js' },
     ],
   }
-};
+}

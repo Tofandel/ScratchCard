@@ -1,6 +1,6 @@
 {
   "name": "@tofandel/scratchcard-js",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Create scratch card in browser.",
   "main": "./dist/scratchcard.min.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "@babel/core": "^7.22.8",
     "@babel/plugin-transform-runtime": "^7.22.7",
     "@babel/preset-env": "^7.22.7",
-    "@vuepress/plugin-active-header-links": "^1.9.9",
+    "@vuepress/plugin-active-header-links": "2.0.0-beta.64",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.8.1",
     "postcss-loader": "^7.3.3",
@@ -39,7 +39,7 @@
     "style-loader": "^3.3.3",
     "ts-loader": "^9.4.4",
     "typescript": "^5.1.6",
-    "vuepress": " ^1.9.9",
+    "vuepress": "2.0.0-beta.64",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
