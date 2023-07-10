@@ -1,6 +1,6 @@
 {
   "name": "@tofandel/scratchcard-js",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Create scratch card in browser.",
   "main": "./dist/scratchcard.min.js",
   "scripts": {
