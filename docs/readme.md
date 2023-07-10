@@ -19,6 +19,7 @@ See the types in action: [Line](/brushes/line), [Spray](/brushes/spray), [Circle
 | Name  | Type | Default value | Comment |
 |---|---|---|---|
 | **scratchType** | SCRATCH_TYPE | LINE | Possibles values : LINE, SPRAY, CIRCLE, BRUSH |
+| **percentToFinish** | number | 50 | The percentage at which the scratchcard will consider itself fully uncovered |
 | **containerWidth** | number | 100 |  |
 | **containerHeight** | number | 100 |  |
 | **brushSrc** | string | "" | For type.BRUSH |

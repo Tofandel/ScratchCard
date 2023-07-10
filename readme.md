@@ -26,6 +26,7 @@ const sc = new ScratchCard(scContainer, {
     scratchType: ScratchCard.type.SPRAY,
     containerWidth: scContainer.offsetWidth,
     containerHeight: 300,
+    percentToFinish: 50,
     imageForwardSrc: '/images/scratchcard.jpg',
     imageBackgroundSrc: '/images/result.png',
     htmlBackground: '<p class="test"><strong>Hello i am HTML content !</strong></p>',
